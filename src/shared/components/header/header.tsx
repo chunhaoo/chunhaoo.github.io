@@ -1,20 +1,24 @@
-import { getThemeMode, setThemeMode } from '../../utils/storage.service';
+import { useDispatch, useSelector } from 'react-redux';
+import { switchTheme } from '../../redux/theme-mode.slice';
+import { Link } from 'react-router-dom';
+import './header.scss';
 
 function Header() {
-    const switchThemeMode = () => {
-        const newMode = getThemeMode() === 'dark' ? '' : 'dark';
-        setThemeMode(newMode);
-        window.location.reload();
-    };
+    const themeMode = useSelector((state: any) => state.themeMode.value);
+    const dispatch = useDispatch();
 
     return (
-        <main>
-            <section></section>
+        <header>
+            <section>
+                <Link to={`home`}>Chun Hao</Link>
+            </section>
 
             <section>
-                <button onClick={switchThemeMode}>Mode</button>
+                <button className={`${themeMode} mode`} onClick={() => dispatch(switchTheme())}>
+                    <div className={`icon icon-${themeMode}-mode`} />
+                </button>
             </section>
-        </main>
+        </header>
     );
 }
 

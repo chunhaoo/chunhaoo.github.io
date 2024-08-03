@@ -3,11 +3,9 @@ import Header from '../header/header';
 
 function MainRoutes() {
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/home" element={<Header />} />
-            </Routes>
-        </BrowserRouter>
+        <Routes>
+            <Route path="/home" element={<Header />} />
+        </Routes>
     );
 }
 

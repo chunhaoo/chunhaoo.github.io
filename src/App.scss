@@ -1,5 +1,7 @@
+@import url('/src/shared/styles/icon.scss');
+
 .App {
-    @apply flex flex-col min-h-full bg-lime-50 dark:bg-black text-gray-900 dark:text-white;
+    @apply flex flex-col min-h-full bg-lime-50 dark:bg-navy text-gray-900 dark:text-white;
 
     .header {
         @apply flex-shrink-0 fixed w-full;

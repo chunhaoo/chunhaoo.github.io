@@ -1,8 +1,9 @@
 import { useSelector } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
 import './App.scss';
+import Footer from './shared/components/footer/footer';
 import Header from './shared/components/header/header';
 import MainRoutes from './shared/components/routes/routes';
-import { BrowserRouter } from 'react-router-dom';
 
 function App() {
     const themeMode = useSelector((state: any) => state.themeMode.value);
@@ -19,6 +20,12 @@ function App() {
                 <section className="content">
                     <div className="content-layout">
                         <MainRoutes />
+                    </div>
+                </section>
+
+                <section className="footer">
+                    <div className="content-layout">
+                        <Footer />
                     </div>
                 </section>
             </main>

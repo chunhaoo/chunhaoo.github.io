@@ -1,0 +1,11 @@
+.link {
+    @apply flex items-center w-fit py-2 font-medium;
+
+    .icon {
+        @apply block mr-4;
+    }
+
+    &:hover {
+        @apply underline;
+    }
+}

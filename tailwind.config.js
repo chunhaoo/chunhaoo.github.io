@@ -7,6 +7,7 @@ module.exports = {
         extend: {
             colors: {
                 navy: '#162438',
+                'dark-green': '#528a64',
             },
             container: {
                 center: true,

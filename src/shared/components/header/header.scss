@@ -1,0 +1,15 @@
+header {
+    @apply flex justify-between items-center p-4 uppercase font-bold;
+
+    .mode {
+        @apply rounded-full p-2;
+
+        &.dark {
+            @apply bg-white;
+        }
+
+        &.bright {
+            @apply border border-solid border-black;
+        }
+    }
+}

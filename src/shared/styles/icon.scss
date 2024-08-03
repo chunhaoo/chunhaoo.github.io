@@ -1,0 +1,13 @@
+.icon {
+    @apply bg-no-repeat bg-center bg-contain;
+}
+
+.icon-dark-mode {
+    background-image: url('../../../public/assets/icons/bright-mode.svg');
+    @apply h-6 w-6;
+}
+
+.icon-bright-mode {
+    background-image: url('../../../public/assets/icons/dark-mode.svg');
+    @apply h-6 w-6;
+}

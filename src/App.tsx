@@ -1,8 +1,10 @@
-import { useSelector } from 'react-redux';
 import './App.scss';
+
+import { useSelector } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
+
 import Header from './shared/components/header/header';
 import MainRoutes from './shared/components/routes/routes';
-import { BrowserRouter } from 'react-router-dom';
 
 function App() {
     const themeMode = useSelector((state: any) => state.themeMode.value);

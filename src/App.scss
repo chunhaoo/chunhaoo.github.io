@@ -1,4 +1,4 @@
-@import url('/src/shared/styles/icon.scss');
+@import './shared/styles/icon.scss';
 
 .App {
     @apply flex flex-col min-h-full bg-lime-50 dark:bg-navy text-gray-900 dark:text-white;

@@ -7,6 +7,10 @@ module.exports = {
         extend: {
             colors: {
                 navy: '#162438',
+                offwhite: '#fcfaf0',
+                pink: '#f472b6',
+                teal: '#ff531f',
+                'dark-green': '#528a64',
             },
             container: {
                 center: true,

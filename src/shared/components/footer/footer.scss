@@ -1,0 +1,15 @@
+.footer-content {
+    @apply rounded-[3rem] p-12 w-fit bg-teal dark:bg-pink text-white;
+}
+
+.link {
+    @apply flex items-center w-fit py-2 font-medium;
+
+    .icon {
+        @apply block mr-4;
+    }
+
+    &:hover {
+        @apply underline;
+    }
+}

@@ -11,3 +11,18 @@
     background-image: url('../../../public/assets/icons/dark-mode.svg');
     @apply h-6 w-6;
 }
+
+.icon-linkedin {
+    background-image: url('../../../public/assets/icons/linkedin.svg');
+    @apply h-6 w-6 rounded-full bg-white;
+}
+
+.icon-github {
+    background-image: url('../../../public/assets/icons/github.svg');
+    @apply h-6 w-6 rounded-full bg-white;
+}
+
+.icon-email {
+    background-image: url('../../../public/assets/icons/email.svg');
+    @apply h-6 w-6 rounded-full bg-white;
+}

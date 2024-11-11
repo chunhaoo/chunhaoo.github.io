@@ -3,6 +3,7 @@ import './App.scss';
 import { useSelector } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 
+import Footer from './shared/components/footer/footer';
 import Header from './shared/components/header/header';
 import MainRoutes from './shared/components/routes/routes';
 
@@ -21,6 +22,12 @@ function App() {
                 <section className="content">
                     <div className="content-layout">
                         <MainRoutes />
+                    </div>
+                </section>
+
+                <section className="footer">
+                    <div className="content-layout">
+                        <Footer />
                     </div>
                 </section>
             </main>

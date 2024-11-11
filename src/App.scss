@@ -1,14 +1,23 @@
 @import './shared/styles/icon.scss';
 
 .App {
-    @apply flex flex-col min-h-full bg-lime-50 dark:bg-navy text-gray-900 dark:text-white;
+    @apply flex flex-col min-h-full bg-offwhite dark:bg-navy text-gray-900 dark:text-white;
 
     .header {
         @apply flex-shrink-0 fixed w-full;
     }
 
     .content {
-        @apply flex-grow;
+        @apply mt-[4.625rem] flex-grow;
+    }
+
+    .footer {
+        @apply px-4 pt-4 pb-8;
+    }
+
+    .header,
+    .content {
+        @apply p-4;
     }
 }
 

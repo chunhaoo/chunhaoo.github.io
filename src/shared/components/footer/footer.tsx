@@ -2,7 +2,7 @@ import './footer.scss';
 
 const Footer = () => {
     return (
-        <footer>
+        <footer className="footer-content">
             <div className="font-semibold text-3xl mb-8">Let's stay connected!</div>
             <a className="link" href="https://github.com/chunhaoo" target="_blank">
                 <span className="icon icon-github"></span>

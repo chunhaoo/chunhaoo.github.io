@@ -1,3 +1,7 @@
+.footer-content {
+    @apply p-12 w-fit bg-teal rounded-[3rem] dark:bg-pink text-white;
+}
+
 .link {
     @apply flex items-center w-fit py-2 font-medium;
 

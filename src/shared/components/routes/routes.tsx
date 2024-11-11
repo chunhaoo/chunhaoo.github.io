@@ -1,13 +1,7 @@
-import { Route, Routes } from 'react-router-dom';
-
-import Header from '../header/header';
+import { Routes } from 'react-router-dom';
 
 function MainRoutes() {
-    return (
-        <Routes>
-            <Route path="/home" element={<Header />} />
-        </Routes>
-    );
+    return <Routes>{/* <Route path="/home" element={<Header />} /> */}</Routes>;
 }
 
 export default MainRoutes;

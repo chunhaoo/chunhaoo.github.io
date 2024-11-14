@@ -1,0 +1,24 @@
+.input-group {
+    @apply w-full;
+
+    label {
+        @apply block mb-2 font-medium text-teal dark:text-cyan;
+    }
+
+    input {
+        @apply py-3 px-4 rounded-lg border;
+    }
+
+    &.required > label::after {
+        content: ' *';
+    }
+
+    &:has(small) {
+        label {
+            @apply text-[#F88282];
+        }
+        input {
+            @apply border-[#F88282];
+        }
+    }
+}

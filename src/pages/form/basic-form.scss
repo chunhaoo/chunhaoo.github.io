@@ -1,0 +1,21 @@
+.basic-form {
+    .link {
+        @apply inline text-black dark:text-white;
+    }
+
+    .basic-input-group {
+        @apply my-4;
+
+        input {
+            @apply text-2xl sm:text-5xl py-4 w-full bg-transparent  border-solid border-teal dark:border-cyan;
+        }
+
+        &.err input {
+            @apply text-[#F88282];
+        }
+
+        &.err input::placeholder {
+            @apply text-[#F8828280];
+        }
+    }
+}

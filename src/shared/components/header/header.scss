@@ -1,5 +1,5 @@
 header {
-    @apply flex justify-between items-center uppercase font-bold;
+    @apply flex justify-between items-center capitalize font-bold;
 
     .mode {
         @apply rounded-full p-2;
@@ -10,6 +10,17 @@ header {
 
         &.bright {
             @apply border border-solid border-black;
+        }
+    }
+
+    a {
+        &:not(:first-child) {
+            @apply ml-8;
+        }
+
+        &.active,
+        &:hover {
+            @apply text-teal dark:text-pink border-b border-solid border-teal dark:border-pink;
         }
     }
 }

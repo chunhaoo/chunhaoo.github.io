@@ -19,16 +19,18 @@ function App() {
                     </div>
                 </section>
 
-                <section className="content">
-                    <div className="content-layout">
-                        <MainRoutes />
-                    </div>
-                </section>
+                <section className="flex flex-col flex-grow overflow-y-auto">
+                    <section className="content">
+                        <div className="content-layout">
+                            <MainRoutes />
+                        </div>
+                    </section>
 
-                <section className="footer">
-                    <div className="content-layout">
-                        <Footer />
-                    </div>
+                    <section className="footer">
+                        <div className="content-layout">
+                            <Footer />
+                        </div>
+                    </section>
                 </section>
             </main>
         </BrowserRouter>

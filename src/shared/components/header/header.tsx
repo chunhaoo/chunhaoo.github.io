@@ -1,7 +1,9 @@
-import { useDispatch, useSelector } from 'react-redux';
-import { switchTheme } from '../../redux/theme-mode.slice';
-import { Link } from 'react-router-dom';
 import './header.scss';
+
+import { useDispatch, useSelector } from 'react-redux';
+import { NavLink } from 'react-router-dom';
+
+import { switchTheme } from '../../redux/theme-mode.slice';
 
 function Header() {
     const themeMode = useSelector((state: any) => state.themeMode.value);
@@ -10,7 +12,8 @@ function Header() {
     return (
         <header>
             <section>
-                <Link to={`home`}>Chun Hao</Link>
+                <NavLink to="/">Home</NavLink>
+                <NavLink to="/form">Formik</NavLink>
             </section>
 
             <section>

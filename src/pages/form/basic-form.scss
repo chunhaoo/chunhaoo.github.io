@@ -11,11 +11,11 @@
         }
 
         &.err input {
-            @apply text-[#F88282];
+            color: #f88282;
         }
 
         &.err input::placeholder {
-            @apply text-[#F8828280];
+            color: #f8828280;
         }
     }
 }

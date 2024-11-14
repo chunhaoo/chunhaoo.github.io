@@ -15,10 +15,10 @@
 
     &:has(small) {
         label {
-            @apply text-[#F88282];
+            color: #f88282;
         }
         input {
-            @apply border-[#F88282];
+            border-color: #f88282;
         }
     }
 }

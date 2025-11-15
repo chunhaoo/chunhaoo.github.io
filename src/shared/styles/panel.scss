@@ -1,0 +1,7 @@
+.rounded-panel {
+    @apply rounded-[3rem] p-12 w-fit bg-teal dark:bg-pink text-white;
+}
+
+.border-panel {
+    @apply sm:rounded-[3rem] sm:bg-[#ffffff80] dark:sm:bg-black-20 sm:p-12 sm:w-fit;
+}

@@ -1,23 +1,25 @@
+@import './shared/styles/font.scss';
+@import './shared/styles/form.scss';
 @import './shared/styles/icon.scss';
+@import './shared/styles/panel.scss';
+
+*:focus {
+    @apply outline-none;
+}
 
 .App {
-    @apply flex flex-col min-h-full bg-offwhite dark:bg-navy text-gray-900 dark:text-white;
+    @apply flex flex-col bg-offwhite h-full dark:bg-navy text-gray-900 dark:text-white;
 
     .header {
-        @apply flex-shrink-0 fixed w-full;
+        @apply flex-shrink-0 sticky p-4 w-full;
     }
 
     .content {
-        @apply mt-[4.625rem] flex-grow;
+        @apply flex-grow px-4 py-10;
     }
 
     .footer {
-        @apply px-4 pt-4 pb-8;
-    }
-
-    .header,
-    .content {
-        @apply p-4;
+        @apply flex-shrink-0 py-20 px-4;
     }
 }
 
